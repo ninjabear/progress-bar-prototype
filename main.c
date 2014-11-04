@@ -58,7 +58,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg,
       case WM_CREATE:
 		  CenterWindow(hwnd);
           hwndPrgBar = CreateWindowEx(0, PROGRESS_CLASS, NULL, 
-                WS_CHILD | WS_VISIBLE | PBS_SMOOTH,
+                WS_CHILD | WS_VISIBLE | PBS_SMOOTH, // pbs_smooth makes no difference when manifest sets new windows styles
                 30, 20, 190, 25, hwnd, NULL, g_hinst, NULL);   
 
           CreateWindow(TEXT("button"), TEXT("Start"), 
