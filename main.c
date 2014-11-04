@@ -18,9 +18,9 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
   WNDCLASSW wc = {0};
   wc.lpszClassName = L"Center";
   wc.hInstance     = hInstance;
-  wc.hbrBackground = GetSysColorBrush(COLOR_3DFACE);
+  //wc.hbrBackground = GetSysColorBrush(COLOR_3DFACE);
   wc.lpfnWndProc   = WndProc;
-  wc.hCursor       = LoadCursor(0, IDC_ARROW);
+ // wc.hCursor       = LoadCursor(0, IDC_ARROW);
   
   RegisterClassW(&wc);
   CreateWindowW(wc.lpszClassName, 
