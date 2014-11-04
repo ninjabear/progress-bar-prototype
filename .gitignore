@@ -5,3 +5,5 @@ out/
 *.lib
 *.ppx
 *.tag
+output/
+*.xml
